@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Para a Mimin ❤️</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="preload" as="image" href="fundo2.gif">
+    <link rel="preload" as="image" href="fundo3.gif">
+    <link rel="preload" as="image" href="fundo4.jpg">
+    <link rel="preload" as="image" href="fundo7.gif">
+    <link rel="preload" as="image" href="fundo9.gif">
+    <link rel="preload" as="audio" href="musica.mp3">
+
+</head>
+
+
+    <div class="pop-up">
+        <h1 class="text-muted">Título teste</h1>
+        <div>Descriçao teste</div>
+        <section class="text-center">
+            <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+        </section>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Bem-vinda</h1>
+            <p>Você está pronta?</p>
+            <button class="mudaTela btn-azul">Começar</button>
+
+            <!--
+            <div class="mt-5">
+
+                <a href="#" class="opcoes">Ver opções</a>
+                <div class="invisivel opcoes">
+                    <p>Se quiser, você pode escolher começar de uma tela específica:</p>
+                    <button class="btn-rosa mudaTela" tela="">Início</button>
+                    <button class="btn-rosa">Mensagens</button>
+                    <button class="btn-rosa">Momentos marcantes</button>
+                    <button class="btn-rosa">O que você mudou em mim</button>
+                    <button class="btn-rosa">Nossa primeira conversa</button>
+                    <button class="btn-rosa">Memorial</button>
+                    <button class="btn-rosa">Declaração</button>
+                    <button class="btn-rosa">Final</button>
+                </div>
+
+            </div>
+            -->
+
+        </div>
+
+        <div id="tela2" class="tela" fundo="fundo1">
+            <p class="text-muted"><small>Antes de começar, confirme:</small>
+                <br>
+            <strong>Você conhece esta pessoa?</strong></p>
+            <img src="tela2.png" class="custom" width="150" alt="">
+            <br>
+
+            <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Sim</button>
+            <br>
+            <button class="btn-vermelho btn-block" onclick="alert('Sério mermo amor? os de verdade eu sei quem são em 😒!');window.location.href='https://www.dicio.com.br/trouxa/'; " >Não</button>
+
+        </div>
+
+        <div id="tela3" class="tela">
+            <p><strong>Tem certeza?</strong><br> Olhe bem pra isso:</p>
+            <img src="tela2.png" class="custom" width="150" alt="">
+
+            <br>
+            <button class="mudaTela btn-block btn-azul">Sim, infelizmente</button>
+            <br>
+            <button class="btn-block btn-vermelho" onclick="alert('Tudo bem, eu entendo sua vergonha.');window.location.href='https://www.dicio.com.br/otario/'; " >Não, Deus me livre</button>
+        </div>
+
+        <div id="tela4" class="tela">
+            <h2>Espere...</h2>
+
+            <img src="tela4.jpg" class="custom mb-4" width="150" alt="">
+
+            <p>É a <strong>Mimin</strong> que está acessando essa página agora?
+                <br><small class="text-muted" style="font-weight: 700;"></small>
+            </p>
+
+            <button class="mudaTela btn-azul">Sim, sou eu</button>
+        </div>
+
+        <div id="tela5" class="tela">
+            <p>Para que tudo dê certo, você precisa estar ouvindo a música de fundo.</p>
+            <hr>
+            <p><small>Quando estiver ouvindo-a, clique no botão.</small></p>
+            <button class="mudaTela btn-azul">Continuar</button>
+        </div>
+
+        <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;" tempo="3000" >
+            <div tempo="3000">
+                <p>Bom, então vamos lá...</p>
+            </div>
+            <div tempo="3000">
+                <p>eu queria que você soubesse de algumas coisas.</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>Fiz esse presente para você.</p>
+            </div>
+        </div>
+
+        <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"  tempo="3000" >
+            <div tempo="3000">
+                <p>As vezes é difícil imaginar...</p>
+            </div>
+            <div tempo="2500">
+                <p>que alguém pode aparecer do nada...</p>
+            </div>
+            <div tempo="2500">
+                <p>e transformar completamente...</p>
+            </div>
+            <div tempo="4000">
+                <p>a nossa perspectiva de vida.</p>
+            </div>
+            <div tempo="4000" final="true">
+                <p>Assim como você fez com a minha.</p>
+            </div>
+        </div>
+
+        <div id="tela8" class="tela-centro tela" fundo="fundo4" tempo="6000">
+         
+            <p>E eu quero te mostrar isso.</p>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela9" class="tela">
+         
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">Nossos primeiros Momentos</h2>
+                    <img src="tela8-1.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Em tantos anos eu nunca senti tanto amor em uma pessoa.</strong></p>
+                </div>
+                <hr>
+                <p><strong class="letra-vermelha">E quando digo em amor</strong>, cara é ver você sorrindo contando as coisas alegre com a vida, olhando pra mim com o seu olhar penetrante meu Deus, você me faz muito feliz amor você me fez acreditar no amor, obrigado por me fazer asim vida :)</p>
+                <p><strong class="letra-vermelha">Conversas</strong> Lembro que a gente passava até tarde conversando, e confesso que gostava e tentava fazer a conversa durar mais.</p>
+                <img src="tela8-2.png" alt="">
+                <p><strong class="letra-vermelha">feliz aniversário</strong>Então amor, hoje é seu dia, cara parabéns amor pelos seus 15 aninhos, que hoje seja muito especial para você amor, hoje vai ser maravilhoso aproveite amor, eu tô tão feliz de esta junto com você esse tempo todo, você tem uma coisa dentro de você que me faz querer sempre descobrir mais e mais, agora a senhorita tá ficando velha né amor, "depois dessa parte tu me olha e dá uma risada tem muita gente que eu não conheço aqui ;_; kakakaka", continuando.. Então amor parabéns pelo seu dia amor, a sua festa tá linda amor, você está que nem uma princesa e como sempre você baby estar maravilhosa, só de pensar que você é minha namorada meu Deus, então vida aproveite a sua noite não quero tomar muito do seu tempo, te amo tá gatinha parabéns vida, não vou estar só essa noite comemorando o seu aniversário, pode me esperar até quando você tiver na cama mimindo, e eu chegando com o bolo te acordando te dando feliz aniversário, enfim amor te amo vida :)</p>
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela10" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha"> Momentos que nunca vou esquecer</h2>
+                    <img src="tela9-1.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Essa é minha foto favorita sua akakakaaj</strong></p>
+                </div>
+                <hr>
+                
+                <p>lembro de quando eu tava lá no Esdras bem de boa olhando o povo passar quando du nada, passou você amor com a Letícia, te olhei reparei falei putaqueopariu que mulher linda meu Deus, mano eu nunca iria imaginar tá aonde que eu tô agora com você, amor tu é muito linda pra mim de verdade, mais cara me apaixonei no seu jeitinho meigo, quando você tá com vergonha e tão fofo amor, meu Deus tu é maravilhosa minha vida te amo ..
+                </p>
+                <ul>
+                    <li><strong class="letra-vermelha">A primeira vez</strong> Cara foi muito aleatorio eu fui no alegre sem esperanças nem uma mais aí tu falou que ia subir, minhas pernas ficou bamba meu Deus, aí tu apareceu te vi pensei e respirei fundo e cheguei te dei um abraço e continuamos com as mãos dadas, e pouco na frente agente ficou pela primeira vez...</li>
+    
+                </ul>
+
+                <hr>
+
+                <div class="text-center">
+                    <p>E ainda tem tantas coisas...</p>
+                    <p><strong class="text-muted">❤</strong></p>
+                </div>
+
+                
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela11" class="tela">
+
+            <div class="text-left">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">3. O que você mudou em mim</h2>
+                    <img src="tela10.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Não podia deixar para trás essa foto nossa com os olhinhos :)...</strong></p>    
+                </div>
+                <hr>
+                <p class="letra-vermelha"><strong></strong></p>
+                <p>Você com certeza foi a pessoa que me mostrou o que e amar de verdade.</p>
+                <hr>
+                <p>Eu não tinha esperança mais no amor até você aparecer e mudar tudo ...</p>
+                <hr>
+                <p><strong class="letra-vermelha">Programação </strong> Então amor tu me acha um nerd mechendo com isso e tals, mais eu acho muito legal e uma boa forma de ocupar a mente, quem sabe um dia você não faz uns bots comigo kakakaka.</p>
+                <hr>
+
+            </div>
+            
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        
+              <div id="tela12" class="invisivel temporizado letra2 tela-centro" fundo="fundo2" style="color: #999;" tempo="2500" >
+                  <div tempo="3000">
+                <p>E só de pensar...</p>
+            </div>
+            <div tempo="2500">
+                <p>onde tudo começou...</p>
+            </div>
+            <div tempo="3000" >
+            </div>
+            <div tempo="3000">
+                <p>E só de pensar...</p>
+            </div>
+            <div tempo="4000">
+                <p>em tudo que ainda podemos viver juntos...</p>
+            </div>
+            <div tempo="4000">
+                <p>É de arrepiar.</p>
+            </div>
+            <div tempo="2500" final="true">
+                <p>Você é o meu amor ❤️</p>
+            </div>
+        </div>
+
+        <div id="tela13" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #999;" tempo="2500" >
+            <div tempo="2000">
+                <p>Bom...</p>
+            </div>
+            <div tempo="3500">
+                <p>acho que já não dá mais para adiar.</p>
+            </div>
+            <div tempo="3500" final="true" >
+                <p>Eu preciso te fazer a pergunta.</p>
+            </div>
+                 
+                
+            </div>
+            
+        </div>
+        
+        </div>
+        
+        <div id="tela14" class="invisivel temporizado letra2 tela-centro" fundo="fundo11" style="color: #999;" tempo="2500" >
+                        <a href="pedido.html"><button style="background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%); margin: 10px;padding: 15px 45px;text-align: center;text-transform: uppercase;transition: 0.5s;background-size: 200% auto; color: white; box-shadow: 0 0 20px #eee;border-radius: 10px;border: none;">Continuar</button></a>
+          </div>
+        
+
+        
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <script src="script.js"></script>
+    <!--<script src="all.min.js"></script>-->
+
+</body>
+</html>
